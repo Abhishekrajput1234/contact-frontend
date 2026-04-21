@@ -7,7 +7,8 @@ export default function Contact(){
         number:"",
         message:"",
         additionalNumber:"",  
-        emergencyContact:""
+        emergencyContact:"",
+        password:""
     })
 
       //inputhandler
@@ -126,6 +127,12 @@ const deleteUser = (id) => {
     <label className="text-sm font-medium text-gray-500 capitalize mb-1 block "> enter emergency contact</label>
     <input type="text" placeholder="enter emergency contact " className="border w-full px-4 py-2 rounded-lg border-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-400"
     name="emergencyContact" value={ user.emergencyContact} onChange={InputHandler}/>
+    </div>
+
+    <div>
+    <label className="text-sm font-medium text-gray-500 capitalize mb-1 block "> enter password</label>
+    <input type="password" placeholder="enter password " className="border w-full px-4 py-2 rounded-lg border-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-400"
+    name="password" value={ user.password} onChange={InputHandler}/>
     </div>
 
     
