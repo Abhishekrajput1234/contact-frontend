@@ -121,6 +121,17 @@ const deleteUser = (id) => {
     name="additionalNumber" value={ user.additionalNumber} onChange={InputHandler}/>
     </div>
 
+    
+    <div>
+    <label className="text-sm font-medium text-gray-500 capitalize mb-1 block "> enter emergency contact</label>
+    <input type="text" placeholder="enter emergency contact " className="border w-full px-4 py-2 rounded-lg border-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-400"
+    name="emergencyContact" value={ user.emergencyContact} onChange={InputHandler}/>
+    </div>
+
+    
+
+
+
       <div>
             <label className="block text-gray-600 font-medium mb-1  text-sm">Message</label>
             <textarea
