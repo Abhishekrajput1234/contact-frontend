@@ -5,7 +5,9 @@ export default function Contact(){
         name:"",
         email:"",
         number:"",
-        message:""
+        message:"",
+        additionalNumber:"",  
+        emergencyContact:""
     })
 
       //inputhandler
@@ -38,7 +40,7 @@ export default function Contact(){
           message:"",
         })
 
-         fetchdata();
+        // fetchdata();
 
 
       })
@@ -47,7 +49,7 @@ export default function Contact(){
 
       
          .catch((err) => {
-      console.error("Error:", err);
+      console.log("Error:", err);
       alert("Something went wrong!");
     
       })
@@ -111,6 +113,12 @@ const deleteUser = (id) => {
     <label className="text-sm font-medium text-gray-500 capitalize mb-1 block "> enter number</label>
     <input type="text" placeholder="enter number " className="border w-full px-4 py-2 rounded-lg border-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-400"
     name="number" value={ user.number} onChange={InputHandler}/>
+    </div>
+
+    <div>
+    <label className="text-sm font-medium text-gray-500 capitalize mb-1 block "> enter additional number</label>
+    <input type="text" placeholder="enter number " className="border w-full px-4 py-2 rounded-lg border-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-400"
+    name="additionalNumber" value={ user.additionalNumber} onChange={InputHandler}/>
     </div>
 
       <div>
